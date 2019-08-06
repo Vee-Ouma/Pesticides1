@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">Pesticide</string>
+    <string name="title">PESTICIDE</string>
+    <string name="cotton">COTTON</string>
+    <string name="rice_p">RICE-P</string>
+    <string name="rice_k">RICE-K</string>
+    <string name="sugarcane">SUGARCANE</string>
+    <string name="sunflower_1">SUNFLOWER-RAINFED</string>
+    <string name="sunflower_2">SUNFLOWER-IRRIGATED</string>
+    <string name="select">Select the crop that you have to check</string>
+    <string name="cotton_selection">There are five stages involved for cotton to be harvested.There is a possibility of pest
+    attack in any of those stages.To know more,click next</string>
+    <string name="rice_p_selection">There are five stages involved for rice_p to be harvested.There is a possibility of pest
+    attack in any of those stages.To know more,click next</string>
+    <string name="rice_k_selection">There are five stages involved for rice_k to be harvested.There is a possibility of pest
+    attack in any of those stages.To know more,click next</string>
+    <string name="sugarcane_selection">There are five stages involved for sugarcane to be harvested.There is a possibility of pest
+    attack in any of those stages.To know more,click next</string>
+    <string name="sunflower_1_selection">There are five stages involved for sunflower-rainfed to be harvested.There is a possibility of pest
+    attack in any of those stages.To know more,click next</string>
+    <string name="sunflower_2_selection">There are five stages involved for sunflower-irrigated to be harvested.There is a possibility of pest
+    attack in any of those stages.To know more,click next</string>
+    <string name="proceed">PROCEED</string>
+    <string name="cotton_stage">STAGES FOR COTTON</string>
+    <string name="stage1">Seedling Stage</string>
+    <string name="stage2">Vegetative Stage</string>
+    <string name="stage3">Flowering Stage</string>
+    <string name="stage4">Fruiting Stage</string>
+    <string name="stage5">Harvesting Stage</string>
+</resources>
