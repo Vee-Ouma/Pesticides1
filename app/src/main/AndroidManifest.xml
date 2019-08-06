@@ -9,7 +9,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Stages"></activity>
+        <activity android:name=".Harvesting"></activity>
+        <activity android:name=".Fruiting" />
+        <activity android:name=".Flowering" />
+        <activity android:name=".Vegetative" />
+        <activity android:name=".Seedling" />
+        <activity android:name=".Stages" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
