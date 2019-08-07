@@ -5,6 +5,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Context;
 import android.content.Intent;
+import android.media.Image;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -17,6 +18,14 @@ public class Seedling2 extends  RecyclerView.Adapter<Seedling2.ViewHolder> {
 
     private Context mContext;
     private ArrayList<Values> mlist;
+
+    ImageView im;
+
+    int im2;
+    TextView t1,t2;
+    String val1,val2;
+    Values items;
+
 
 
     Seedling2(Context context, ArrayList<Values> list){
@@ -38,11 +47,9 @@ public class Seedling2 extends  RecyclerView.Adapter<Seedling2.ViewHolder> {
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
 
-        Values items = mlist.get(position);
+        items = mlist.get(position);
 
 
-        ImageView im;
-        TextView t1,t2;
 
         im=holder.picture;
         t1=holder.biology;
@@ -51,11 +58,21 @@ public class Seedling2 extends  RecyclerView.Adapter<Seedling2.ViewHolder> {
         im.setImageResource(items.getImage());
         t1.setText(items.getParent_name());
         t2.setText(items.getDisease_name());
+
+        val1=items.getParent_name();
+        val2=items.getDisease_name();
+        im2=items.getImage();
+
         im.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent;
                 intent=new Intent(mContext,Last_page.class);
+                intent.putExtra("parent",val1);
+                intent.putExtra("child",val2);
+                intent.putExtra("image",im2);
+
+
                 mContext.startActivity(intent);
             }
         });

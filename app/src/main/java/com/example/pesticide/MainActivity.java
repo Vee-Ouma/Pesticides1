@@ -21,6 +21,7 @@ public class MainActivity extends AppCompatActivity {
     TextView textView;
     Button button;
     String stage_name;
+    String crop_name;
     String[] mOptions = {"-----SELECT-----","COTTON", "RICE-P", "RICE-K", "SUGARCANE","SUNFLOWER-RAINFED","SUNFLOWER-IRRIGATED"};
     String[] plant_stage={"Pest attack may occur during seedling stage.Click to know more","Pest attack may occur during vegetative stage.Click to know more",
             "Pest attack may occur during flowering stage.Click to know more","Pest attack may occur during fruiting stage.Click to know more",
@@ -60,25 +61,28 @@ public class MainActivity extends AppCompatActivity {
                 }
                 if(i==1){
                     stage_name=select_options[0];
-
+                    crop_name=mOptions[1];
                     imageView.setImageResource(R.drawable.cotton);
                     textView.setText(R.string.cotton_selection);
 
 
                 }
                 if(i==2){
+                    crop_name=mOptions[2];
                     stage_name=select_options[1];
                     imageView.setImageResource(R.drawable.rice);
                     textView.setText(R.string.rice_k_selection);
 
                 }
                 if(i==3){
+                    crop_name=mOptions[3];
                     stage_name=select_options[2];
                     imageView.setImageResource(R.drawable.rice_1);
                     textView.setText(R.string.rice_p_selection);
 
                 }
                 if(i==4){
+                    crop_name=mOptions[4];
                     stage_name=select_options[3];
                     imageView.setImageResource(R.drawable.sugar_cane);
                     textView.setText(R.string.sugarcane_selection);
@@ -86,12 +90,14 @@ public class MainActivity extends AppCompatActivity {
 
                 }
                 if(i==5){
+                    crop_name=mOptions[5];
                     stage_name=select_options[4];
                     imageView.setImageResource(R.drawable.sunflower_1);
                     textView.setText(R.string.sunflower_1_selection);
 
                 }
                 if(i==6){
+                    crop_name=mOptions[6];
                     stage_name=select_options[5];
                     imageView.setImageResource(R.drawable.sunflower_2);
                     textView.setText(R.string.sunflower_2_selection);
@@ -108,6 +114,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent;
                 intent=new Intent(MainActivity.this,Stages.class);
+                intent.putExtra("crop_name",crop_name);
                 intent.putExtra("Name",stage_name);
                 intent.putExtra("seed",seed);
                 intent.putExtra("veg",vegetative);
