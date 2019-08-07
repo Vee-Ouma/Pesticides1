@@ -4,6 +4,7 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -50,6 +51,14 @@ public class Seedling2 extends  RecyclerView.Adapter<Seedling2.ViewHolder> {
         im.setImageResource(items.getImage());
         t1.setText(items.getParent_name());
         t2.setText(items.getDisease_name());
+        im.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent;
+                intent=new Intent(mContext,Last_page.class);
+                mContext.startActivity(intent);
+            }
+        });
 
 
 
