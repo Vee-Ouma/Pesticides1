@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Harvesting"></activity>
+        <activity android:name=".Information"></activity>
+        <activity android:name=".Harvesting" />
         <activity android:name=".Fruiting" />
         <activity android:name=".Flowering" />
         <activity android:name=".Vegetative" />
