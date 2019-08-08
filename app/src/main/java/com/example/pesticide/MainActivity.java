@@ -22,13 +22,13 @@ public class MainActivity extends AppCompatActivity {
     Button button;
     String stage_name;
     String crop_name;
-    String[] mOptions = {"-----SELECT-----","COTTON", "RICE-P", "RICE-K", "SUGARCANE","SUNFLOWER-RAINFED","SUNFLOWER-IRRIGATED"};
+    String[] mOptions = {"-----SELECT-----","COTTON", "RICE", "PEANUT", "SUGARCANE","WHEAT",};
     String[] plant_stage={"Pest attack may occur during seedling stage.Click to know more","Pest attack may occur during vegetative stage.Click to know more",
             "Pest attack may occur during flowering stage.Click to know more","Pest attack may occur during fruiting stage.Click to know more",
             "Pest attack may occur during harvesting stage.Click to know more"};
 
 
-    String[] select_options={"STAGES FOR COTTON","STAGES FOR RICE-P","STAGES FOR RICE-K","STAGES FOR SUGARCANE","STAGES FOR SUNFLOWER-RAINFED","STAGES FOR SUNFLOWER-IRRIGATED"};
+    String[] select_options={"STAGES FOR COTTON","STAGES FOR RICE","STAGES FOR PEANUT","STAGES FOR SUGARCANE","STAGES FOR WHEAT"};
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -71,14 +71,14 @@ public class MainActivity extends AppCompatActivity {
                     crop_name=mOptions[2];
                     stage_name=select_options[1];
                     imageView.setImageResource(R.drawable.rice);
-                    textView.setText(R.string.rice_k_selection);
+                    textView.setText(R.string.rice_selection);
 
                 }
                 if(i==3){
                     crop_name=mOptions[3];
                     stage_name=select_options[2];
-                    imageView.setImageResource(R.drawable.rice_1);
-                    textView.setText(R.string.rice_p_selection);
+                    imageView.setImageResource(R.drawable.peanut);
+                    textView.setText(R.string.peanut);
 
                 }
                 if(i==4){
@@ -89,18 +89,12 @@ public class MainActivity extends AppCompatActivity {
 
 
                 }
+
                 if(i==5){
                     crop_name=mOptions[5];
                     stage_name=select_options[4];
-                    imageView.setImageResource(R.drawable.sunflower_1);
-                    textView.setText(R.string.sunflower_1_selection);
-
-                }
-                if(i==6){
-                    crop_name=mOptions[6];
-                    stage_name=select_options[5];
-                    imageView.setImageResource(R.drawable.sunflower_2);
-                    textView.setText(R.string.sunflower_2_selection);
+                    imageView.setImageResource(R.drawable.cereal);
+                    textView.setText(R.string.wheat);
 
                 }
             }
