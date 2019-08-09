@@ -79,14 +79,17 @@ public class Stages extends AppCompatActivity implements View.OnClickListener {
                 break;
             case R.id.card3:
                 intent=new Intent(Stages.this,Flowering.class);
+                intent.putExtra("crop",value);
                 startActivity(intent);
                 break;
             case R.id.card4:
                 intent=new Intent(Stages.this,Fruiting.class);
+                intent.putExtra("crop",value);
                 startActivity(intent);
                 break;
             case R.id.card5:
                 intent=new Intent(Stages.this,Harvesting.class);
+                intent.putExtra("crop",value);
                 startActivity(intent);
                 break;
 
