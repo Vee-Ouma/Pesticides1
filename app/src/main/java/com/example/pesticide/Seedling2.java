@@ -36,6 +36,7 @@ public class Seedling2 extends  RecyclerView.Adapter<Seedling2.ViewHolder> {
 
 
 
+
     Seedling2(Context context, ArrayList<Values> list){
         mContext=context;
         mlist=list;
