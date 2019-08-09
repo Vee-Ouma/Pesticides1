@@ -74,6 +74,7 @@ public class Stages extends AppCompatActivity implements View.OnClickListener {
                 break;
             case R.id.card2:
                 intent=new Intent(Stages.this,Vegetative.class);
+                intent.putExtra("crop",value);
                 startActivity(intent);
                 break;
             case R.id.card3:
